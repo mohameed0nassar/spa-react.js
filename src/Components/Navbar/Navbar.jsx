@@ -45,13 +45,13 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="collapsibleNavId">
             <ul className="navbar-nav ms-auto mt-2 mt-lg-0">
                
-                <li className="nav-item pt-1 ms-md-2" onClick={sectionLi}>
+                <li className="nav-item pt-1 ps-1 ms-md-2" onClick={sectionLi}>
                     <Link className="nav-link h1 fw-bold" to="about">About</Link>
                 </li>
-                <li className="nav-item pt-1 ms-md-2" onClick={sectionLi}>
+                <li className="nav-item pt-1 ps-1 ms-md-2" onClick={sectionLi}>
                     <Link className="nav-link h1 fw-bold" to="portfolio">Portfolio</Link>
                 </li>
-                <li className="nav-item pt-1 ms-md-2" onClick={sectionLi}>
+                <li className="nav-item pt-1 ps-1 ms-md-2" onClick={sectionLi}>
                     <Link className="nav-link h1 fw-bold" to="contact">Contact</Link>
                 </li>
                
