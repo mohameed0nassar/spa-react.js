@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body,html{
+  scroll-behavior: smooth;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+nav{
+  z-index: 999999;
+}
+:root{
+  --main-color: #2C3E50;
+  --main-op-color: #2c3e5076;
+  --sec-color:#1ABC9C ;
+  --sec-op-color:#1abc9cb2 ;
+  --foot-color: #1A252F;
+  
+}
+.trans{
+  transition: all .4s;
+}
+.bg-main{
+  background-color: var(--main-color);
+}
+.bg-sec{
+  background-color: var(--sec-color);
+}
+.main-color{
+  color: var(--main-color);
+}
+.sec-color{
+  color: var(--sec-color);
+}
+.bg-footer{
+  background-color: var(--foot-color);
+}
+a{
+  text-decoration: none !important;
+  color: white !important;
+}
+.main-title{
+  font-size: 3rem;
+  font-weight: bold;
+
+margin-top: 2rem;
+}
+.main-icon{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-icon i{
+
+  font-size: 2.5rem;
+  padding: 1rem;
+  z-index: 2;
+  
+
+}
+.main-icon::after{
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 10px;
+}
+#home .main-icon::after,#about .main-icon::after{
+  background-color: white;
+}
+#portfolio .main-icon::after,#contact .main-icon::after{
+  background-color: var(--main-color);
+}
+
+@media screen and (max-width:992px) {
+  .main-title{
+    font-size: 1.75rem;
+  } 
+  .main-icon i{
+    font-size: 1.5rem;
+
+  }
+  .main-icon::after{
+    height: 8px;
+  }
+}

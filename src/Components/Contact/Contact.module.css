@@ -1,0 +1,8 @@
+.inpLabel{
+    transform: translateY(30px);
+    
+}
+.inpLabel+input{
+    position: relative;
+
+}
